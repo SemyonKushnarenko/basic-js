@@ -34,9 +34,7 @@ const chainMaker = {
   },
   finishChain() {
     let chain = ''
-    for (let i = 0; i < this.chain.length; i++) {
-      chain = this.chain.join('~~')
-    }
+    chain = this.chain.join('~~')
     this.chain = []
     return chain
   }
